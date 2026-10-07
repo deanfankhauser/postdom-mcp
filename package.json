@@ -1,0 +1,39 @@
+{
+  "name": "@postdom/mcp",
+  "version": "0.4.0",
+  "description": "Postdom MCP server for agent-led social publishing and performance measurement.",
+  "license": "MIT",
+  "homepage": "https://postdom.com/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deanfankhauser/postdom-mcp.git"
+  },
+  "bugs": {
+    "email": "support@postdom.com"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "social-media",
+    "tiktok",
+    "instagram",
+    "postdom"
+  ],
+  "type": "module",
+  "bin": {
+    "postdom-mcp": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.4.3"
+  }
+}
